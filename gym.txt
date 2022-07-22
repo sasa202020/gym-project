@@ -1,12 +1,11 @@
-0)log in to ur profile(so it would also remember me and i wouldnt need to login 100 times)
-1)counter of reps
-2)customizable list of excercises ur doing
-3) list of different weights for exercises
-4)progress traking (yearly visits to gym)
-5)tracking ur pause time (customizable)
-6)tracking ur visits (can see it in calendar)
-7)tracking days 1/2/3 or anything else and u could mane those days
-8)plan ur gym visits and notifications
+0)log in to ur profile(so it would also remember me and i wouldnt need to login 100 times) || have
+1)counter of reps									   || have
+2)customizable list of excercises ur doing						   || have
+3) list of different weights for exercises						   || have
+4)progress traking (yearly visits to gym)						   || have
+5)tracking ur pause time (customizable) 						   || have
+6)tracking ur visits (can see it in calendar)						   || doing
+7)tracking days 1/2/3 or anything else and u could mane those days			   || have
 
 
 ------
