@@ -1,3 +1,37 @@
+:root {
+    --black: #000000;
+    --paddingoneverything : 1rem;
+  }
+*{
+    text-decoration: none;
+    margin: 0;
+    color: var(--black);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
 
-/*Login*/
-
+h1{
+    font-size: clamp(1.7rem, 0.4000rem + 6.5000vw, 3rem);
+    text-align:start;
+    padding: 1rem;
+    max-height: 87px;
+}
+.hamburgerIcon{
+    max-width: 70px;
+    max-height: 50px;
+padding-top: var(--paddingoneverything);
+padding-right: var(--paddingoneverything);
+}
+/*  hiding Desktop elements for  phone version*/
+@media screen and (min-width: 641px) {
+    .mobileContent{
+      display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .desktopContent{
+      display: none;
+    }
+}
