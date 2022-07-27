@@ -24,6 +24,108 @@ h1{
 padding-top: var(--paddingoneverything);
 padding-right: var(--paddingoneverything);
 }
+/* slide menu start*/
+body, html{
+    height:100%;
+}
+body{
+    padding:0;
+    margin:0;
+}
+section li{
+    margin:0 0 10px;
+}
+
+.wrapper{
+    overflow:hidden;
+}
+section{
+    padding:0px 90px 0px 0px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:250px;
+    height:100%;
+    margin:0 0 0 -250px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+}
+nav ul{
+    width:250px;
+    height:100%;
+    padding:0;
+    margin:0;
+    list-style:none;
+    background:#222;
+    overflow:hidden;
+}
+nav li{
+    margin:0;
+}
+nav a{
+    color:#fff;
+    font-size:1em;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    text-decoration:none;
+    display:block;
+    padding:12px 15px;
+    font-weight:300;
+    letter-spacing:2px;
+    border-bottom:1px solid #333;
+}
+nav a:hover{
+    background:#111;
+}
+label{
+    position:fixed;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    z-index:500;
+}
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav{
+    margin:0;
+}
+input[type="checkbox"]:checked ~ label{
+    left:260px;
+}
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform:translate3d(260px, 0, 0);
+    -moz-transform:translate3d(260px, 0, 0);
+    -o-transform:translate3d(260px, 0, 0);
+    transform:translate3d(260px, 0, 0);
+}
+
+
+/*slide menu end*/
+/* General end*/
+/* Login start*/
+/* Login end*/
+/* Registration start*/
+/* Registration end*/
+/* Homepage start*/
+/* Homepage end*/
+/* Exercises start*/
+/* Exercises end*/
+/* Profile start*/
+/* Profile end*/
+/* Users of app start*/
+/* Users of app end*/
+/* Visit history start*/
+/* Visit history end*/
 /*  hiding Desktop elements for  phone version*/
 @media screen and (min-width: 641px) {
     .mobileContent{
@@ -33,5 +135,13 @@ padding-right: var(--paddingoneverything);
 @media screen and (max-width: 640px) {
     .desktopContent{
       display: none;
+    }
+}
+/*Fixes*/
+@media screen and (max-width: 380px) {
+    .hamburgerIcon{
+        max-width: 50px;
+        max-height: 30px;
+        padding-left: var(--paddingoneverything);
     }
 }
