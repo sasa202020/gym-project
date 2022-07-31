@@ -1,6 +1,6 @@
 :root {
     --black: #000000;
-    --paddingoneverything : 1rem;
+    --paddingoneverything : .7rem;
   }
 *{
     text-decoration: none;
@@ -13,23 +13,19 @@ header{
 }
 
 h1{
-    font-size: clamp(1.7rem, 0.4000rem + 6.5000vw, 3rem);
+    font-size: clamp(1rem, 0.4000rem + 5vw, 3rem);
     text-align:start;
     padding: 1rem;
     max-height: 87px;
 }
 .hamburgerIcon{
-    max-width: 70px;
-    max-height: 50px;
 padding-top: var(--paddingoneverything);
 padding-right: var(--paddingoneverything);
+margin-left: 25px;
 }
 /* slide menu start*/
 body, html{
     height:100%;
-}
-body{
-
 }
 section li{
     margin:0 0 10px;
@@ -50,27 +46,26 @@ nav{
     position:fixed;
     top:0;
     left:0;
-    width:250px;
+    width:200px;
     height:100%;
-    margin:0 0 0 calc(100vw + 250px); /*changed this also*/
+    margin:0 0 0 calc(100vw + 200px); /*changed this also*/
     -moz-transition:all 200ms ease-in;
     -webkit-transition:all 200ms ease-in;
     -o-transition:all 200ms ease-in;
     transition:all 200ms ease-in;
 }
 nav ul{
-    width:250px;
+    width:200px;
     height:100%;
     padding:0;
-    margin-left:calc(100vw - 250px); /*do not touch calc(100vw - 250px);*/
+    margin-left:calc(100vw - 200px); /*do not touch calc(100vw - 250px);*/
     list-style:none;
-    background:#222;
+    background:rgb(161, 161, 161);
 }
 nav li{
     margin:0;
 }
 nav a{
-    color:#fff;
     font-size:1em;
     font-family:'helvetica neue', helvetica, arial, sans-serif;
     text-decoration:none;
@@ -78,10 +73,6 @@ nav a{
     padding:12px 15px;
     font-weight:300;
     letter-spacing:2px;
-    border-bottom:1px solid #333;
-}
-nav a:hover{
-    background:#111;
 }
 label{
     position:fixed;
@@ -97,9 +88,11 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked ~ nav{
     margin:0;
 }
+/*
 input[type="checkbox"]:checked ~ label{
     right:4px;
 }
+*/
 input[type="checkbox"]:checked ~ section{
     -webkit-transform:translate3d(260px, 0, 0);
     -moz-transform:translate3d(260px, 0, 0);
@@ -136,10 +129,18 @@ input[type="checkbox"]:checked ~ section{
     }
 }
 /*Fixes*/
-@media screen and (max-width: 380px) {
-    .hamburgerIcon{
-        max-width: 50px;
-        max-height: 30px;
-        padding-left: var(--paddingoneverything);
-    }
+@media screen and (max-width: 476px) {
+        nav ul{
+            width:140px;
+            margin-left:calc(100vw - 140px); 
+        }
+        nav{
+            width:140px;
+        }
+        .hamburgerIcon{
+            width: 38px;
+            margin-left: 34px;
+            padding-right: .5rem;
+            padding-top: .5rem;
+        }
 }
