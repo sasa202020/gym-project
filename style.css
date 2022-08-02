@@ -36,6 +36,10 @@ border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 12px;
 transform: matrix(1, 0, 0, 1, 0, 0);
+margin: var(--paddingoneverything);
+display: flex;
+margin-left: auto;
+margin-right: auto;
 }
 .hamburgerIcon{
 padding-top: var(--paddingoneverything);
@@ -131,7 +135,7 @@ h6{
 }
 h5{
     font-size: clamp(1rem, 0.4000rem + 4vw, 3rem);
-    margin-left: 20vw;
+    margin-left: 30%;
 }
 .mobileContentIndex{
     padding: 0;
@@ -203,6 +207,16 @@ h5{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+  .remembernLogin{
+    padding: var(--paddingoneverything);
+    display:flex;
+    justify-content: space-evenly;
+  }
+  .registrationGenderFlex{
+    padding: var(--paddingoneverything);
+    display:flex;
+    justify-content: space-evenly;
+  }
 /* Login end*/
 /* Registration start*/
 /* Registration end*/
@@ -220,6 +234,11 @@ h5{
 @media screen and (min-width: 641px) {
     .mobileContent, .mobileContentIndex{
       display: none;
+    }
+}
+@media screen and (min-width: 500px) {
+    h5{
+      margin-left: 34%;
     }
 }
 @media screen and (max-width: 640px) {

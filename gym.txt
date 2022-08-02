@@ -4,7 +4,7 @@
 3) list of different weights for exercises						   || have
 4)progress traking (yearly visits to gym)						   || have
 5)tracking ur pause time (customizable) 						   || have
-6)tracking ur visits (can see it in calendar)						   || doing
+6)tracking ur visits (can see it in calendar)						   || have
 7)tracking days 1/2/3 or anything else and u could mane those days			   || have
 
 
@@ -14,3 +14,8 @@ not that worthy ideas
 achievements
 blog
 guides for exercises
+name
+birthday
+gender
+gym city 
+gym
