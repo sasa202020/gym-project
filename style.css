@@ -285,6 +285,18 @@ input[type="time"] {
 }
 /* Homepage end*/
 /* Exercises start*/
+.gymNameEditSection {
+  padding: 0%;
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+.headingFlex {
+  padding: 0%;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
 /* Exercises end*/
 /* Profile start*/
 /* Profile end*/
