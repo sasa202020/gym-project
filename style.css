@@ -262,6 +262,27 @@ input[type="date"] {
 }
 /* Registration end*/
 /* Homepage start*/
+.centerBigButton {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.bigButton {
+  width: 220px;
+  height: 80px;
+  background: #d9d9d9;
+  padding: var(--paddingoneverything);
+}
+.h2PaddingFix {
+  padding-bottom: 1.8rem;
+}
+.submitButton {
+  margin-top: 1rem;
+  margin-right: 4rem;
+}
+input[type="time"] {
+  margin-left: 3rem;
+}
 /* Homepage end*/
 /* Exercises start*/
 /* Exercises end*/
